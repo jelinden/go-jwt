@@ -1,0 +1,53 @@
+body,
+.input,
+.button {
+    font: normal 16px Verdana;
+    margin: 0;
+}
+
+.label {
+    display: block;
+    margin: 0 0 5px;
+}
+
+.input {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 0 10px;
+    padding: 5px 7.5px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.button {
+    background: #eee;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #333;
+    display: inline-block;
+    margin: 0 0 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #e8e8e8;
+}
+
+.menu a {
+    margin-right: 10px;
+}
+
+.layout {
+    padding: 10px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+.error {
+    color: red;
+}
