@@ -28,7 +28,9 @@ Run the simple test with `go test`.
 
 A Mithril.js web application to test how jwt token basically works. After successfull login the token is saved to local storage.
 
+<hr />
 <img src="https://github.com/jelinden/go-jwt/raw/master/jwt-login.png" width="350">
+<hr />
 
 ### Running
 
