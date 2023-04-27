@@ -3,7 +3,6 @@ module github.com/jelinden/go-jwt/part2
 go 1.19
 
 require (
-	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/golang-jwt/jwt/v5 v5.0.0
 	github.com/gorilla/context v1.1.1
 	github.com/julienschmidt/httprouter v0.0.0-20180715161854-348b672cd90d
