@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"strings"
 
-	jwt "github.com/dgrijalva/jwt-go"
+	jwt "github.com/golang-jwt/jwt/v5"
 	"github.com/gorilla/context"
 	"github.com/julienschmidt/httprouter"
 )
@@ -38,7 +38,7 @@ func AuthorizeMiddleware(next http.HandlerFunc) httprouter.Handle {
 func parseBearerToken(bearerToken string) (*jwt.Token, error) {
 	return jwt.Parse(bearerToken, func(token *jwt.Token) (interface{}, error) {
 		if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
-			return nil, fmt.Errorf("There was an error")
+			return nil, fmt.Errorf("there was an error")
 		}
 		return []byte(secretKey), nil
 	})

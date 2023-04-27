@@ -8,7 +8,7 @@ import (
 
 	"html/template"
 
-	jwt "github.com/dgrijalva/jwt-go"
+	jwt "github.com/golang-jwt/jwt/v5"
 	"github.com/julienschmidt/httprouter"
 )
 
@@ -39,10 +39,7 @@ func LoginPOST(w http.ResponseWriter, req *http.Request, _ httprouter.Params) {
 }
 
 func validateCredentials(user User) bool {
-	if credentials[user.Username] == user.Password {
-		return true
-	}
-	return false
+	return credentials[user.Username] == user.Password
 }
 
 func signedTokenString(user Username) string {

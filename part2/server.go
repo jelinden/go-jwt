@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/dgrijalva/jwt-go"
+	"github.com/golang-jwt/jwt/v5"
 	"github.com/gorilla/context"
 	"github.com/jelinden/go-jwt/part2/app"
 	"github.com/julienschmidt/httprouter"
