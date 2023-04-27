@@ -14,11 +14,7 @@ Username, password and the key to sign the token are in the code for clarity, bu
 
 `cd part1`
 
-Get vgo `go get -u golang.org/x/vgo`
-
-`vgo build && ./part1`
-
-More info on vgo: `https://godoc.org/golang.org/x/vgo`
+`go build && ./part1`
 
 ### Testing
 
@@ -36,4 +32,4 @@ A Mithril.js web application to test how jwt token basically works. After succes
 
 `npm install && npm run build`
 
-`vgo build && ./part2`
+`go build && ./part2`
